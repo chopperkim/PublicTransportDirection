@@ -1,0 +1,66 @@
+<PreferenceScreen xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        app:title="@string/people_header">
+        <SeekBarPreference
+            android:key="adults"
+            android:title="@string/adult_title"
+            android:summary="@string/adult_count"
+            android:max="5"
+            android:defaultValue="1"
+            app:showSeekBarValue="true" />
+        <SeekBarPreference
+            android:key="children"
+            android:title="@string/children_title"
+            android:summary="@string/children_count"
+            android:max="5"
+            android:defaultValue="0"
+            app:showSeekBarValue="true" />
+
+        <SeekBarPreference
+            android:key="disabled"
+            android:title="@string/disabled_title"
+            android:summary="@string/disabled_count"
+            android:max="5"
+            android:defaultValue="0"
+            app:showSeekBarValue="true" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        app:title="@string/transport_header">
+
+        <SwitchPreferenceCompat
+            app:key="airplane"
+            app:title="@string/airplane_title"/>
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="express_bus"
+            app:title="@string/express_bus_title"/>
+
+        <SwitchPreferenceCompat
+            app:key="rental_car"
+            app:title="@string/rental_car_title"/>
+
+        <SwitchPreferenceCompat
+            app:defaultValue="true"
+            app:key="railway"
+            app:title="@string/railway_title"/>
+
+        <SwitchPreferenceCompat
+            app:key="taxi"
+            app:title="@string/taxi_title"/>
+
+        <SwitchPreferenceCompat
+            app:key="kick_board"
+            app:title="@string/kick_board_title"/>
+
+        <SwitchPreferenceCompat
+            app:key="walking"
+            app:title="@string/walking_title"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>
